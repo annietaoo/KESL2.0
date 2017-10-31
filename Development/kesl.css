@@ -14,6 +14,16 @@ body {
   width: 100%;
 }
 
+.kesl-top-container-2 {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.3), 
+    rgba(0, 0, 0, 0.3)
+  ), url("Assets/hero-bg-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
 .kesl-nav-container {
   background: rgba(0,0,0,1); /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0)); /*Safari 5.1-6*/
@@ -118,7 +128,20 @@ body {
 .kesl-hero-container {
   display: inline-block;
   position: relative;
-  padding: 30px 30px 170px 0px;
+  padding: 240px 30px 200px 0px;
+}
+
+.kesl-hero-container-2 {
+  display: inline-block;
+  position: relative;
+  padding: 0px 0px 200px 0px;
+  margin-top: 230px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.kesl-main-promo-2 {
+  padding-bottom: 200px;
 }
 
 .kesl-theme-shape {
@@ -129,20 +152,37 @@ body {
   margin-left: -50px;
 }
 
+#shape{
+  position: absolute;
+  height: 165px;
+  right: 0;
+  margin-right: -350px;
+}
+
 .kesl-main-title {
   color: #ffffff;
   font-family: 'Open Sans', sans-serif !important;
   font-size: 90px;
   font-weight: 300;
-  margin: 210px 120px 0px 185px;
+  margin: 0px 120px 0px 185px;
 }
 
-.kesl-subtitle {
+.kesl-subtitle, .kesl-subtitle-2 {
   color: #ffffff;
   font-family: 'Open Sans', sans-serif !important;
   font-size: 21px;
   font-weight: 700;
+  position: absolute;
+}
+
+.kesl-subtitle {
   margin-left: 145px;
+}
+
+.kesl-subtitle-2 {
+  margin-top: 140px;
+  margin-right: 317px;
+  right: 0;
 }
 
 .kesl-progress-text {
@@ -381,4 +421,101 @@ li {
 
 a, a:link, a:hover, a:visited {
   color: white !important;
+  text-decoration: none !important;
+}
+
+.kesl-card-container-2 {
+  width: 100%;
+  padding: 100px 0px 100px 12%;
+  text-align: center;
+}
+
+.timeline-svg{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 130px;
+}
+
+.kesl-timeline-info-container {
+  position: absolute;
+  width: 100%;
+  display: table;
+  overflow: hidden;
+}
+
+.kesl-timeline-date:nth-child(1) {
+  text-align: right;
+  float: left;
+  width: 50%;
+  height: 500px;
+  padding-right: 100px;
+  padding-left: 250px;
+  padding-top: 40px;
+}
+
+.kesl-timeline-date:nth-child(3) {
+  text-align: left;
+  float: right;
+  width: 50%;
+  height: 300px;
+  padding-right: 250px;
+  padding-left: 100px;
+}
+
+.kesl-timeline-date:nth-child(5) {
+  text-align: right;
+  float: left;
+  width: 50%;
+  height: 500px;
+  padding-right: 100px;
+  padding-left: 250px;
+}
+
+
+.kesl-timeline-info:nth-child(2) {
+  text-align: left;
+  float: right;
+  width: 50%;
+  height: 500px;
+  padding-left: 100px;
+  padding-right: 250px;
+  padding-top: 25px;
+}
+
+.kesl-timeline-info:nth-child(4) {
+  text-align: right;
+  float: left;
+  width: 50%;
+  height: 300px;
+  padding-right: 100px;
+  padding-left: 250px;
+}
+
+.kesl-timeline-info:nth-child(6) {
+  text-align: left;
+  float: right;
+  width: 50%;
+  height: 500px;
+  padding-left: 100px;
+  padding-right: 250px;
+}
+
+.date-title {
+  font-family: 'Lato Light', sans-serif !important;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 45px;
+}
+
+.date-date{
+  font-family: 'Lato Light', sans-serif !important;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.kesl-timeline-info {
+  font-family: 'Lato Light', sans-serif !important;
+  font-size: 20px;
+  font-weight: 400;
 }
