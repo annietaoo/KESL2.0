@@ -582,7 +582,7 @@ section {
   padding-top: 60px;
 }
 
-#contact-name {
+#contact-name, #contact-email {
   border-width: 1px;
   border-color: rgba(0,0,0,.2);
   color: #b8b8b8;
@@ -592,20 +592,7 @@ section {
   font-weight: 600;
   height: 60px;
   margin-bottom: 35px;
-  text-align: center;
-  width: 460px;
-}
-
-#contact-email{
-  border-width: 1px;
-  border-color: rgba(0,0,0,.2);
-  color: #b8b8b8;
-  font-family: 'Open Sans', sans-serif !important;
-  font-size: 18px;
-  font-style: italic;
-  font-weight: 600;
-  height: 60px;
-  margin-bottom: 35px;
+  padding: 0px 30px 0px 30px;
   text-align: center;
   width: 460px;
 }
@@ -620,7 +607,7 @@ section {
   font-weight: 600;
   height: 60px;
   margin-bottom: 60px;
-  padding-top: 15px;
+  padding: 15px 30px 0px 30px;
   text-align: center;
   width: 460px;
 }
@@ -654,6 +641,162 @@ color: #b8b8b8;
   width: 460px;
 }
 /**** CONTENT - CONTACT END ****/
+
+/**** CONTENT - FAQ ****/
+
+#kesl-faq {
+  font-family: 'Open Sans', sans-serif !important;
+  padding: 100px 20% 50px 20%;
+}
+
+#kesl-faq-item {
+  color: #ee4949;
+  font-size: 30px;
+}
+
+.kesl-faq-answer {
+  color: #b8b8b8;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 0px 45px 0px;
+  margin-left: -30px;
+}
+
+.more-faq-link {
+  float: right;
+  padding: 0px 10% 70px 0px;
+}
+
+.kesl-faq-more {
+  display: inline-block;
+}
+
+#kesl-faq-more {
+  color: #ee4949 !important;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.more-faq-arrow {
+  font-size: 41.97px;
+  float: right;
+  padding-left: 15px;
+  margin-top: -12px;
+}
+
+/**** CONTENT - FAQ END ****/
+
+/**** CONTENT - REGISTRATION ****/
+
+.kesl-signup {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif !important;
+  padding-top: 60px;
+}
+
+.kesl-signup-title {
+  font-size: 30px;
+  color: #ee4949;
+  padding-bottom: 15px;
+}
+
+.signup-social-media-container {
+  padding-bottom: 50px;
+}
+
+.signup-email-container {
+  padding-bottom: 105px;
+  display: block;
+  font-family: 'Open Sans', sans-serif !important;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  width: 900px;
+}
+
+#registration-form {
+  text-align: center;
+}
+
+#username, #email, #confirm-email, #password, #confirm-password {
+  border-width: 1px;
+  border-color: rgba(0,0,0,.2);
+  color: #b8b8b8;
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 600;
+  height: 60px;
+  margin-top: 35px;
+  padding: 0px 30px 0px 30px;
+  text-align: center;
+  width: 460px;
+}
+
+::placeholder { 
+  color: #b8b8b8; 
+  text-align: center;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: #b8b8b8; 
+  text-align: center;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #b8b8b8; 
+  text-align: center;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #b8b8b8; 
+  text-align: center;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #b8b8b8; 
+  text-align: center;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #b8b8b8; 
+  text-align: center;
+}
+
+input[type="checkbox"], label {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 18px;
+  line-height: 20px;
+  height: 18px;
+  margin-top: 55px;
+}
+
+input[type="checkbox"] {
+  width: 50px;
+  vertical-align: -2px;
+}
+
+#registration-submit {
+  background-color: #ee4949;
+  border: none;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 30px;
+  font-weight: 400;
+  height: 70px;
+  margin-top: 70px;
+  margin-bottom: 45px;
+  text-align: center;
+  width: 460px;
+}
+
+.error {
+    display: none;
+    font-family: 'Open Sans', sans-serif !important;
+    color: #ea4135;
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+/**** CONTENT - REGISTRATION END ****/
 
 /**** FOOTER ****/
 

@@ -5,6 +5,19 @@ $(document).ready(function(){
       $('.drop-down-menu').toggle();
       return false;
   });
+  
+  $("#email").on("blur", validateEmail);
+  $("#email, #confirm-email").on("blur", checkEmailMatch);
+  $("#username").on("blur", validateUserName);
+  $("#password").on("blur", validatePassword);
+  $("#password, #confirm-password").on("blur", checkPasswordMatch);
+  
+  $("#registration-submit").bind("click", registrationValidation);
+  $("#registration-form").on('submit', function(e) {
+    e.preventDefault();
+    if(registratonValidation() == true)
+    this.submit();
+  });
 });
 
 //slideshow style interval
@@ -125,3 +138,101 @@ $('#CTA-email-2').keypress(function (e) {
     return false;
   }
 });
+
+function validateEmail() {
+    var email = $("#email").val();
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if(re.test(email)){
+        $("#invalid-email").css('display','none');
+    }
+    else {
+        $("#invalid-email").css('display','block');
+    }
+    return re.test(email);
+}
+
+function checkEmailMatch() {
+    var email = $("#email").val();
+    var confirmEmail = $("#confirm-email").val();
+
+    if (email!= confirmEmail){
+        $("#email-dnm").css('display','block');
+        return false;
+    }
+    else{
+        $("#email-dnm").css('display','none');
+        return true;
+    }
+}
+
+function validateUserName() {
+    var username = $("#username").val();
+    var re = /^((?!_)[A-Za-z0-9]){1,30}$/;
+    if(re.test(username))
+        $("#invalid-user").css('display','none');
+    else
+        $("#invalid-user").css('display','block');
+    return re.test(username);
+}
+
+function validatePassword() {
+    var psw = $("#password").val();
+    var re = /^([0-9a-zA-Z@!#\$\^%&*()+=\-\[\]\\\';,\.\/\{\}\|\":<>\?]){1,30}$/;
+    if(re.test(psw))
+        $("#invalid-psw").css('display','none');
+    else
+        $("#invalid-psw").css('display','block');
+    return re.test(psw);
+}
+
+function checkPasswordMatch() {
+    var password = $("#password").val();
+    var confirmPassword = $("#confirm-password").val();
+
+    if (password != confirmPassword){
+        $("#psw-dnm").css('display','block');
+        return false;
+    }
+    else{
+        $("#psw-dnm").css('display','none');
+        return true;
+    }
+}
+
+function privacyAndTermsChecked() {
+  var cb = $("#privacy-and-terms");
+  if (cb.is(':checked')){
+    $("#pt-check-error").css('display','none');
+  }
+  else {
+    $("#pt-check-error").css('display','block');
+  }
+  return re.test(cb);
+}
+
+function registrationValidation() {
+  if (validateEmail() && checkEmailMatch() && validateUserName() && validatePassword() && checkPasswordMatch() && privacyAndTermsChecked()) {
+    return true;
+  }
+  else {
+      if(!validateEmail()) {
+          $("#invalid-email").css('display','block');
+        }
+      if(!checkEmailMatch()){
+          $("#email-dnm").css('display','block');
+      }
+      if(!validateUserName()){
+          $("#invalid-user").css('display','block');
+      }
+      if(!validatePassword()){
+          $("#invalid-psw").css('display','block');
+      }
+      if(!checkPasswordMatch()){
+          $("#psw-dnm").css('display','block');
+      }
+      if(!privacyAndTermsChecked()){
+          $("#pt-check-error").css('display','block');
+      }
+      return false;
+  }
+}
