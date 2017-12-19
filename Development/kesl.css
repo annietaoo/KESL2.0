@@ -1,5 +1,5 @@
 body {
-	font-family: 'Arial Narrow', sans-serif !important;
+	font-family: 'Open Sans', sans-serif !important;
 	margin: 0;
 }
 
@@ -127,6 +127,18 @@ body {
   margin-left: 28px;
   margin-top: 30px;
 }
+
+/** NAV BAR 2 **/
+
+.kesl-nav-container-2 {
+  background: #ee4949;
+  display: block;
+  width: 100%;
+  height: 77px;
+  padding: 0px 0px 15px 0px;
+}
+
+/** NAV BAR 2 END**/
 
 /** DROP DOWN MENU **/
 
@@ -797,6 +809,214 @@ input[type="checkbox"] {
 }
 
 /**** CONTENT - REGISTRATION END ****/
+
+/**** CONTENT - PLAYER PROFILE ****/
+
+.profile-header {
+  position: relative;
+  padding: 50px 0px 30px 0px;
+}
+
+.profile-motif {
+  float: left;
+}
+
+.profile-title-text {
+  margin-left: 370px;
+  margin-top: -18px;
+}
+
+.profile-player-title {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 60px;
+  font-weight: 300;
+  padding-bottom: 25px;
+}
+
+.profile-player-sub-title {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 18px;
+  font-weight: 300;
+  padding-top: 8px;
+}
+
+.profile-content {
+  padding: 20px 0px 50px 370px;
+}
+
+.player-profile-mmr {
+  width: 100%;
+}
+
+.player-ranking-title {
+  color: #ee4949;
+  float: left;
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 30px;
+  font-style: bold;
+  font-weight: 700;
+  line-height: 30px;
+  width: 100px;
+}
+
+.player-mmr {
+  color: #ee4949;
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 80px;
+  font-style: bold;
+  font-weight: 600;
+  line-height: 50px;
+  margin-left: 175px;
+  width: 100px;
+}
+
+.player-roles-container {
+  padding: 35px 0px 35px 0px;
+  width: 100%;
+}
+
+.player-roles {
+  display: block;
+  padding-bottom: 55px;
+}
+
+.profile-end-motif {
+  display: inline-block;
+}
+
+.profile-end-shape {
+  display: inline-block;
+}
+
+.profile-end-shape-text {
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif !important;
+  margin-left: 15px;
+  margin-top: -115px;
+  position: absolute;
+}
+
+.player-role-first {
+  display: block;
+  font-size: 48px;
+  font-style: bold;
+  font-weight: 700;
+}
+
+.player-main-role {
+  display: inline-block;
+  font-size: 18px;
+  font-style: bold;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.player-main-position-number {
+  display: inline-block;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 300;
+  margin-left: 5px;
+}
+
+.profile-main-hero-1 {
+  display: inline-block;
+  margin-left: -53px;
+}
+
+.profile-main-hero-2, .profile-main-hero-3 {
+  display: inline-block;
+  margin-left: -49px;
+}
+
+.profile-main-hero-1-WR, .profile-main-hero-2-WR, .profile-main-hero-3-WR {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 300;
+  padding-top: 2px;
+}
+
+.profile-main-hero-1-WR {
+  margin-left: 200px;
+}
+
+.profile-main-hero-2-WR, .profile-main-hero-3-WR {
+  margin-left: 100px;
+}
+
+.player-role-second {
+  display: block;
+  font-size: 48px;
+  font-style: bold;
+  font-weight: 700;
+}
+
+.player-secondary-role {
+  display: inline-block;
+  font-size: 18px;
+  font-style: bold;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.player-secondary-position-number {
+  display: inline-block;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 300;
+  margin-left: 5px;
+}
+
+.profile-secondary-hero-1 {
+  display: inline-block;
+  margin-left: -53px;
+}
+
+
+.profile-secondary-hero-2, .profile-secondary-hero-3 {
+  display: inline-block;
+  margin-left: -49px;
+}
+
+.profile-secondary-hero-1-WR, .profile-secondary-hero-2-WR, .profile-secondary-hero-3-WR {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 300;
+  padding-top: 2px;
+}
+
+.profile-secondary-hero-1-WR {
+  margin-left: 200px;
+}
+
+.profile-secondary-hero-2-WR, .profile-secondary-hero-3-WR {
+  margin-left: 100px;
+}
+
+.dotabuff-player-profile {
+  background: #ee4949;
+  display: inline-block;
+  font-size: 21px;
+  font-style: bold;
+  font-weight: 700;
+  text-align: center;
+  width: 150px;
+  padding: 5px 0px 5px 0px;
+}
+
+.opendota-player-profile {
+  background: #ee4949;
+  display: inline-block;
+  font-size: 21px;
+  font-style: italic;
+  font-weight: 500;
+  margin-left: 10px;
+  text-align: center;
+  width: 150px;
+  padding: 5px 0px 5px 0px;
+}
+
+/**** CONTENT - PLAYER PROFILE END ****/
 
 /**** FOOTER ****/
 
