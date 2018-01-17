@@ -1,11 +1,12 @@
-//dd menu toggle;
 $(document).ready(function(){
+  //dd menu toggle;
   $('.hamburger-button').click(function() {
       $(this).toggleClass('change');
       $('.drop-down-menu').toggle();
       return false;
   });
   
+  //form validations
   $("#email").on("blur", validateEmail);
   $("#email, #confirm-email").on("blur", checkEmailMatch);
   $("#username").on("blur", validateUserName);
@@ -17,6 +18,70 @@ $(document).ready(function(){
     e.preventDefault();
     if(registratonValidation() == true)
     this.submit();
+  });
+  
+  $("#team-player-1").click(function() {
+    $(".player-1-details").show();
+    $(".player-2-details").hide();
+    $(".player-3-details").hide();
+    $(".player-4-details").hide();
+    $(".player-5-details").hide();
+    $("#selector-1").show();
+    $("#selector-2").hide();
+    $("#selector-3").hide();
+    $("#selector-4").hide();
+    $("#selector-5").hide();
+  });
+  $("#team-player-2").click(function() {
+    $(".player-2-details").show();
+    $(".player-1-details").hide();
+    $(".player-3-details").hide();
+    $(".player-4-details").hide();
+    $(".player-5-details").hide();
+    $("#selector-2").show();
+    $("#selector-1").hide();
+    $("#selector-3").hide();
+    $("#selector-4").hide();
+    $("#selector-5").hide();
+  });
+  
+  $("#team-player-3").click(function() {
+    $(".player-3-details").show();
+    $(".player-2-details").hide();
+    $(".player-1-details").hide();
+    $(".player-4-details").hide();
+    $(".player-5-details").hide();
+    $("#selector-3").show();
+    $("#selector-2").hide();
+    $("#selector-1").hide();
+    $("#selector-4").hide();
+    $("#selector-5").hide();
+  });
+  
+  $("#team-player-4").click(function() {
+    $(".player-4-details").show();
+    $(".player-2-details").hide();
+    $(".player-3-details").hide();
+    $(".player-1-details").hide();
+    $(".player-5-details").hide();
+    $("#selector-4").show();
+    $("#selector-2").hide();
+    $("#selector-3").hide();
+    $("#selector-1").hide();
+    $("#selector-5").hide();
+  });
+  
+  $("#team-player-5").click(function() {
+    $(".player-5-details").show();
+    $(".player-2-details").hide();
+    $(".player-3-details").hide();
+    $(".player-1-details").hide();
+    $(".player-4-details").hide();
+    $("#selector-5").show();
+    $("#selector-2").hide();
+    $("#selector-3").hide();
+    $("#selector-4").hide();
+    $("#selector-1").hide();
   });
 });
 
