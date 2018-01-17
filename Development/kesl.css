@@ -915,6 +915,23 @@ input[type="checkbox"] {
   margin-left: 5px;
 }
 
+.profile-main-hero-1 {
+  display: inline-block;
+  margin-left: -53px;
+}
+
+.profile-main-hero-2, .profile-main-hero-3 {
+  display: inline-block;
+  margin-left: -49px;
+}
+
+.profile-main-hero-1-WR, .profile-main-hero-2-WR, .profile-main-hero-3-WR {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 300;
+  padding-top: 2px;
+}
+
 .profile-main-hero-1-WR {
   margin-left: 200px;
 }
